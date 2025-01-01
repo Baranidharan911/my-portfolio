@@ -110,13 +110,25 @@
     transform: translateY(-2px);
 }
 
+/* Project Detail Media Queries */
 @media (max-width: 768px) {
-    .portfolio-detail__hero-content,
-    .portfolio-detail__content {
-        padding: 40px 20px;
+    .portfolio-detail__hero {
+      height: 400px;
     }
-    
+  
+    .portfolio-detail__hero-content {
+      padding: 20px;
+    }
+  
     .portfolio-detail__title {
-        font-size: 36px;
+      font-size: 32px;
+    }
+  
+    .portfolio-detail__content {
+      padding: 40px 20px;
+    }
+  
+    .portfolio-detail__links {
+      flex-direction: column;
     }
 }

@@ -155,17 +155,25 @@
     transform: scale(1.2) rotateY(360deg);
   }  
   
-  @media (max-width: 1024px) {
-    .services {
-      padding: 60px 40px;
-    }
-    
-    .services-wrapper {
-      flex-direction: column;
-    }
-    
-    .service-card {
-      min-height: auto;
-    }
+/* Services Media Queries */
+@media (max-width: 768px) {
+  .services {
+    padding: 40px 20px;
   }
-  
+
+  .section-title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .services-container {
+    flex-direction: column;
+  }
+
+  .service-card.small,
+  .service-card.large {
+    width: 80%;
+    height: auto;
+    min-height: 200px;
+  }
+}

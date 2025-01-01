@@ -80,12 +80,22 @@
     border-radius: 4px;
 }
 
+/* Projects List Media Queries */
 @media (max-width: 768px) {
     .portfolio-projects {
-        padding: 60px 20px;
+      padding: 40px 20px;
     }
-    
+  
     .portfolio-projects__header h1 {
-        font-size: 48px;
+      font-size: 36px;
+      text-align: center;
+    }
+  
+    .portfolio-projects__grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .portfolio-card {
+      height: 250px;
     }
 }

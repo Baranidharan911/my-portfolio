@@ -126,13 +126,66 @@ body{
     color: #000;
   }
   
-  @media (max-width: 1200px) {
-    .hero {
-      padding: 60px 40px;
-    }
-    
-    .hero-name {
-      font-size: 80px;
-    }
+/* Hero Media Queries */
+@media (max-width: 768px) {
+  .heros {
+    padding: 20px;
+    height: auto;
+    text-align: center;
   }
+
+  .heros-name {
+    font-size: 42px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+  }
+
+  .heros-content {
+    grid-template-columns: 1fr;
+    gap: 0px;
+    margin: 5px;
+  }
+
+  .center-section {
+    height: 180px;
+    margin-top: 80px;
+  }
+
+  .profile-card {
+    width: 170px;
+    height: 100px;
+  }
+
+  /* .profile-image{
+    height: auto;
+  } */
+
+  .achievements p{
+    margin: 3px;
+  }
+  .achievements h3{
+    margin: 5px;
+  }
+  .cv-button{
+    margin-top: 5px;
+  }
+
+  .profile-image-wrapper {
+    top: -150px;
+    width: 200px;
+    height: 350px;
+  }
+
+  .right-section {
+    width: 100%;
+    padding: 0;
+  }
+
+  .intro-text {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+  }
+}
+
   
