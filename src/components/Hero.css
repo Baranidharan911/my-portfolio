@@ -1,0 +1,138 @@
+body{
+    background-color: rgb(197, 235, 247);
+}
+/* Hero.css */
+.heros {
+    padding: 30px 100px 0px 100px;
+    background-color: rgb(208, 234, 243);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .heros-name {
+    font-size: 130px;
+    font-weight: 1200;
+    letter-spacing: -2px;
+    margin-bottom:20px;
+    margin-top: 110px;
+  }
+  
+  .heros-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .left-section {
+    padding-right: 20px;
+  }
+  
+  .achievements h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .achievements p {
+    color: #666;
+    font-size: 18px;
+  }
+
+  .cv-button {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .cv-button:hover {
+    background-color: #fcfcf8;
+    color: #000;
+    border: 1px solid #000;
+  }
+  
+  
+  /* Updated CSS for the profile card */
+  .center-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+  
+  .profile-card {
+    background: #fff;
+    border-start-end-radius: 150px;
+    border-start-start-radius: 150px;
+    padding: 20px;
+    width: 250px; /* Increased width to prevent side cutting */
+    height: 180px; /* Increased height proportionally */
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-image-wrapper {
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px; /* Adjusted width to match image proportions */
+    height: 500px; /* Increased height to show full image */
+    overflow: visible; /* Changed to show full image */
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Changed to contain to prevent cutting */
+    object-position: center; /* Center the image */
+  }
+  
+  .right-section {
+    padding-left: 20px;
+    width: 350px;
+  }
+  
+  .intro-text {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    text-align: start;
+  }
+  
+  .cta-button {
+    background-color: #000;
+    color: #fff;
+    padding: 16px 32px;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    border-color: #000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #fcfcf8;
+    color: #000;
+  }
+  
+  @media (max-width: 1200px) {
+    .hero {
+      padding: 60px 40px;
+    }
+    
+    .hero-name {
+      font-size: 80px;
+    }
+  }
+  

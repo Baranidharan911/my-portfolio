@@ -1,0 +1,122 @@
+/* components/ProjectDetail.css */
+.portfolio-detail {
+    background-color: #000;
+}
+
+.portfolio-detail__hero {
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.portfolio-detail__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.portfolio-detail__hero-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 100px 120px;
+    color: #fff;
+}
+
+.portfolio-detail__category {
+    text-transform: uppercase;
+    font-size: 14px;
+    background: rgba(255,255,255,0.1);
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.portfolio-detail__title {
+    font-size: 64px;
+    font-weight: 900;
+}
+
+.portfolio-detail__content {
+    padding: 100px 120px;
+}
+
+.portfolio-detail__wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.portfolio-detail__description,
+.portfolio-detail__tech {
+    margin-bottom: 60px;
+}
+
+.portfolio-detail__subtitle {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: white;
+    text-align: start;
+}
+
+.portfolio-detail__text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+    text-align: justify;
+}
+
+.portfolio-detail__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.portfolio-detail__tag {
+    padding: 8px 16px;
+    background: #fff;
+    color: #000;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.portfolio-detail__links {
+    display: flex;
+    gap: 20px;
+}
+
+.portfolio-detail__github,
+.portfolio-detail__back {
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-detail__github {
+    background: #fff;
+    color: #000;
+}
+
+.portfolio-detail__back {
+    border: 1px solid #000;
+    color: #fff;
+}
+
+.portfolio-detail__github:hover,
+.portfolio-detail__back:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .portfolio-detail__hero-content,
+    .portfolio-detail__content {
+        padding: 40px 20px;
+    }
+    
+    .portfolio-detail__title {
+        font-size: 36px;
+    }
+}

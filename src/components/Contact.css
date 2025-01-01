@@ -1,0 +1,187 @@
+.contact {
+    padding: 10px 120px;
+    margin: 20px 90px;
+    background-color: rgb(208, 234, 243);
+  }
+  
+  .section-title {
+    font-size: 75px;
+    font-weight: 900;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #000;
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    gap: 30px;
+  }
+
+  .contact-card.info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    width: 250px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .icon {
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .info-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  
+  .info-item h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 2px;
+    text-align: start;
+    color: #000;
+    text-transform: uppercase;
+  }
+  
+  .info-item p {
+    color: #666;
+    font-size: 16px;
+    margin: 1px;
+  }
+  
+  .socials {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .socials h3{
+    text-align: start;
+    margin: 3px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+  }
+  
+  .social-links a {
+    color: #000;
+    font-size: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  
+  /* Right Card Styles */
+  .contact-form {
+    flex: 2;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+  }
+
+  .contacts-card.form-card {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 40px;
+    width: 97.5%;
+    margin-bottom: 0px;
+    margin-top: 3px;
+    justify-content: flex-start;
+  }
+  
+  .form-group {
+    flex: 1;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    text-align: start;
+    margin-top: 5px;
+    color: #000;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 95%;
+    padding: 16px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #666;
+    background: #fff;
+  }
+  
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: #999;
+  }
+  
+  .form-group textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .submit-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 16px 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+    width: 25%;
+  }
+  
+  .submit-btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 1024px) {
+    .contact {
+      padding: 60px 20px;
+    }
+    
+    .section-title {
+      font-size: 72px;
+    }
+    
+    .contact-wrapper {
+      flex-direction: column;
+    }
+    
+    .form-row {
+      flex-direction: column;
+    }
+  }
+  

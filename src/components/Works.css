@@ -1,0 +1,110 @@
+/* Works.css */
+.works {
+    padding: 20px 90px 50px 90px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .section-titles {
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #fff;
+    text-align: start;
+  }
+  
+  .works-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .works-container-large {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .works-container-small {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .work-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .work-card.large {
+    flex: 1;
+    height: 400px;
+  }
+  
+  .work-card.small {
+    flex: 1;
+    height: 300px;
+  }
+  
+  .tags {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #131313;
+  }
+  
+  .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: #fff;
+  }
+  
+  .card-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 16px;
+    opacity: 0.8;
+  }
+  
+  .work-card:hover {
+    transform: scale(0.98);
+  }
+
+  .work-card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .works {
+      padding: 60px 20px;
+    }
+    
+    .works-container-large,
+    .works-container-small {
+      flex-direction: column;
+    }
+    
+    .work-card.large,
+    .work-card.small {
+      height: 300px;
+    }
+  }
+  

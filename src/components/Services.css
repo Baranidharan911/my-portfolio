@@ -1,0 +1,171 @@
+.services {
+    padding: 10px 120px 80px 120px;
+    background-color: rgb(208, 234, 243);
+  }
+  
+  .section-title {
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #000;
+    text-align: start;
+  }
+  
+  .services-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .services-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #f0f0f0;
+  }
+  
+  .service-card.large {
+    height: 220px;
+    width: 100%;
+    max-width: 2000px;
+  }
+  
+  .service-card.small {
+    height: 220px;
+    width: 50%;
+  }
+  
+  .service-number {
+    font-size: 14px;
+    color: #666;
+    padding: 4px 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 30px;
+    text-align: start;
+    display: table;
+    align-self: flex-start;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+  
+  .service-card h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: start;
+    font-weight: 700;
+    color: #000;
+  }
+  
+  .service-card p {
+    color: #666;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  
+  .arrow-icon {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    transform: rotate(-45deg);
+    font-size: 25px;
+    opacity: 0.5;
+  }
+  
+  .service-card:hover {
+    background-color: #f8f8f8;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .service-card:hover .service-number {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .service-card:hover .arrow-icon {
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: all 0.4s ease-in-out;
+  }
+
+  .tech-stack-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+  
+  .service-card:hover .tech-stack-popup {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .tech-stack-popup h4 {
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .tech-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .tech-icons svg {
+    font-size: 30px;
+    color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .tech-icons svg:hover {
+    transform: scale(1.2) rotateY(360deg);
+  }
+  
+  .tech-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .tech-icons img:hover {
+    transform: scale(1.2) rotateY(360deg);
+  }  
+  
+  @media (max-width: 1024px) {
+    .services {
+      padding: 60px 40px;
+    }
+    
+    .services-wrapper {
+      flex-direction: column;
+    }
+    
+    .service-card {
+      min-height: auto;
+    }
+  }
+  

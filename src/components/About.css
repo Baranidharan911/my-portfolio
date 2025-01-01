@@ -1,0 +1,81 @@
+/* About.css */
+.about {
+    background-color: #000;
+    color: #fff;
+    padding: 100px 0;
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .sections-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 60px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  
+  .about-text {
+    font-size: 24px;
+    line-height: 1.6;
+    max-width: 800px;
+    text-align: justify;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 0px;
+  }
+  
+  .stat-item {
+    text-align: left;
+  }
+  
+  .stat-item h3 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 15px;
+  }
+  
+  .stat-item p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #888;
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      padding: 60px 0;
+    }
+  
+    .section-title {
+      font-size: 36px;
+    }
+  
+    .about-text {
+      font-size: 20px;
+    }
+  
+    .stats-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .stat-item h3 {
+      font-size: 48px;
+    }
+  }
+  
