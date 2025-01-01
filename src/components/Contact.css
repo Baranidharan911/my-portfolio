@@ -170,7 +170,7 @@
 /* Contact Media Queries */
 @media (max-width: 768px) {
   .contact {
-    padding: 40px 20px 40px 10px;
+    padding: 40px 20px 40px 20px;
     margin: 0px;
   }
 
