@@ -152,7 +152,7 @@
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .works {
-      padding: 20px;
+      padding: 20px 10px 20px 5px;
   }
 
   .section-titles {
@@ -162,13 +162,14 @@
 
   .works-wrapper {
       gap: 15px;
+      align-items: center;
   }
 
   .works-container-large,
   .works-container-small {
       flex-direction: column;
       gap: 15px;
-      width: 380px;
+      width: 360px;
       height: 300px;
   }
 
